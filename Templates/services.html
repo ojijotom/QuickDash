@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>services</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.min.css' %}">
+    <script src="{% static 'bootstrap/js/bootstrap.min.js' %}"></script>
+</head>
+<body>
+<h1 class="text-center"> Our Services</h1>
+<div class="row container">
+    {% load static %}
+    <div class="col">
+        <img src="{% static 'assets/img_1.png' %}" alt="" width="100%" height="50%">
+        <h2 class="text-center">Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam aliquid animi architecto delectus dignissimos dolor dolorem ducimus, esse et excepturi exercitationem neque odio perferendis temporibus totam vero voluptate voluptatibus?</p>
+       <button class="btn bg-info m-auto d-block">See portfolio</button>
+    </div>
+    <div class="col">
+        <img src="{% static 'assets/img_2.png' %}" alt="" width="100%" height="50%">
+        <h2 class="text-center">Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad alias animi, aspernatur at culpa debitis excepturi hic ipsam iure libero maiores, molestiae placeat porro qui quidem saepe, ullam vel voluptatum.</p>
+       <button class="btn bg-warning m-auto d-block">See projects</button>
+    </div>
+    <div class="col">
+        <img src="{% static 'assets/img_3.png' %}" alt="" width="100%" height="50%">
+        <h2 class="text-center">Analytics</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam aut blanditiis culpa deserunt placeat praesentium quos, sequi soluta totam! Aspernatur deleniti dolorum enim magnam nam nostrum possimus reprehenderit! Error!</p>
+        <button type="submit" class="btn btn-success m-auto d-block" >See testimonials</button>
+    </div>
+</div>
+</body>
+</html>
+
