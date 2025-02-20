@@ -5,10 +5,40 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About</title>
+    <title>About Page</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/about.css' %}">
+
 </head>
 <body>
-<h1>About Us!</h1>
-<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis neque nesciunt officiis perspiciatis provident reprehenderit sit, velit veritatis. Animi esse iure maxime odit perferendis porro quam quod repudiandae? Dicta, excepturi!</span><span>Animi consequuntur itaque iusto nam nemo nihil odit officiis tempore vel, voluptatum. Aut ducimus eligendi, illum inventore nemo nostrum numquam obcaecati officiis quas repellendus sapiente similique tempora velit vitae, voluptatem?</span><span>Alias, aliquid distinctio dolore dolorem dolores eius est expedita id inventore molestias necessitatibus neque nesciunt nihil numquam omnis perferendis porro quibusdam quis quos ratione rerum saepe sequi tenetur voluptates voluptatibus.</span></p>
+<a href="{% url 'About' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'home' %}">Gallery</a>
+<a href="{% url 'product' %}">Product</a>
+
+<h1>Additional information about QuickDish</h1>
+<p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aspernatur assumenda beatae corporis debitis deserunt doloribus eveniet exercitationem, laborum maxime minus nesciunt praesentium, quibusdam totam veniam veritatis vero voluptate?</span><span>At beatae debitis deserunt dignissimos, distinctio eligendi excepturi fugiat harum inventore, iure nulla pariatur, sequi sit temporibus unde veritatis voluptatibus? Assumenda iure libero necessitatibus nemo, provident reprehenderit saepe tenetur veniam.</span></p>
+<h2>Why choose Us?</h2>
+
+<div id="main">
+    <div class="mydiv">
+        <img src="{% static 'assets/watch1.png' %}" alt="" class="image">
+        <h3>Watch1</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis dolor laboriosam nemo nulla numquam optio rerum velit voluptatem. Alias, corporis dolor earum facilis molestiae molestias pariatur? Magni, possimus.</span><span>Accusantium aspernatur consectetur delectus deserunt dolor enim error, et expedita facilis id iusto labore mollitia nesciunt quae rem saepe sint tempora. Accusantium iure nulla porro quae quod suscipit velit veritatis.</span><span>Consequatur, cumque dolore dolorum error et expedita ipsa minus modi natus necessitatibus numquam provident quae quaerat quam quasi saepe sed similique tempora tenetur velit? Consectetur debitis hic in praesentium quisquam.</span></p>
+         <button type="submit">More</button>
+    </div>
+    <div class="mydiv">
+         <img src="{% static 'assets/watch2.png' %}" alt="" class="image">
+        <h3>Watch2</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis dolor laboriosam nemo nulla numquam optio rerum velit voluptatem. Alias, corporis dolor earum facilis molestiae molestias pariatur? Magni, possimus.</span><span>Accusantium aspernatur consectetur delectus deserunt dolor enim error, et expedita facilis id iusto labore mollitia nesciunt quae rem saepe sint tempora. Accusantium iure nulla porro quae quod suscipit velit veritatis.</span><span>Consequatur, cumque dolore dolorum error et expedita ipsa minus modi natus necessitatibus numquam provident quae quaerat quam quasi saepe sed similique tempora tenetur velit? Consectetur debitis hic in praesentium quisquam.</span></p>
+         <button type="submit">More</button>
+    </div>
+    <div class="mydiv">
+         <img src="{% static 'assets/watch3.png' %}" alt="" class="image">
+        <h3>Watch3</h3>
+        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ad debitis dolor laboriosam nemo nulla numquam optio rerum velit voluptatem. Alias, corporis dolor earum facilis molestiae molestias pariatur? Magni, possimus.</span><span>Accusantium aspernatur consectetur delectus deserunt dolor enim error, et expedita facilis id iusto labore mollitia nesciunt quae rem saepe sint tempora. Accusantium iure nulla porro quae quod suscipit velit veritatis.</span><span>Consequatur, cumque dolore dolorum error et expedita ipsa minus modi natus necessitatibus numquam provident quae quaerat quam quasi saepe sed similique tempora tenetur velit? Consectetur debitis hic in praesentium quisquam.</span></p>
+         <button type="submit">More</button>
+    </div>
+</div>
 </body>
 </html>

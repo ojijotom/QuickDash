@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration</title>
+     {% load static %}
+    <link rel="stylesheet" href="{% static 'css/form.css' %}">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a href="{% url 'About' %}">About</a>
+<a href="{% url 'gallery' %}">Gallery</a>
+<a href="{% url 'home' %}">Gallery</a>
+<a href="{% url 'form' %}">Form</a>
+<a href="{% url 'product' %}">Product</a>
+<form action="">
+     <legend>Registration Form</legend>
+    <br><br>
+    <label for="name">First Name:</label><br><br>
+    <input type="text" id="name" required="required">
+    <br><br>
+    <label for="lname">Last Name:</label><br><br>
+    <input type="text" id="lname" requred="required">
+    <br><br>
+    <label for="email">Email:</label><br><br>
+    <input type="email" id="email" required="required">
+    <br><br>
+    <label for="pwd">Password</label><br><br>
+    <input type="password" id="pwd" required="required">
+    <br><br>
+    <label for="pwds">Re-type password:</label><br><br>
+    <input type="password" id="pwds" required="required">
+    <br><br>
+    <label for="phone">Contact:</label><br><br>
+    <input type="tel" id="phone" required="required">
+    <br>
+    <label for="sex">Gender:</label><br><br>
+    <select name="" id="one">
+        <option value="">Male</option>
+        <option value="">Female</option>
+    </select>
+    <br><br>
+<button>Submit</button>
+
+</form>
+
+</body>
+</html>
